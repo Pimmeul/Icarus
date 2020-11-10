@@ -1,0 +1,32 @@
+* {
+    font-family: "Roboto Light", serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #EFEFEF;
+}
+
+.masterHead {
+    height: 800px;
+    min-height: 500px;
+    background-image: url("../Media/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.padding{
+    margin-top:5%;
+}
+
+.button-header {
+    border-radius: 25px;
+}
+.boxTimer {
+    height: 135px;
+}
+.numberCounter {
+    border-radius: 20px;
+    border: #DCDCDC solid 2px;
+}
