@@ -11,10 +11,10 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item h3 pr-5">
-                    <a class="nav-link" href="#">Info</a>
+                    <a class="nav-link" href="#Info">Info</a>
                 </li>
                 <li class="nav-item h3 ">
-                    <a class="nav-link" href="#">Reserveer</a>
+                    <a class="nav-link" href="#Reserveer">Reserveer</a>
                 </li>
             </ul>
         </div>
@@ -37,7 +37,7 @@
 
                 <div class="row mt-5">
                     <div class="col-12">
-                        <p class="display-4 text-light">Over</p>
+                        <p id="Info" class="display-4 text-light">Over</p>
                     </div>
                 </div>
                 <!-- Text "Over -->
@@ -71,18 +71,18 @@
             <div class="container-fluid" >
                 <div class="row justify-content-center pt-4">
                     <div class="col-2">
-                        <h1 class="">20</h1>
+                        <h1 id="Days" class="">20</h1>
                         <p>Day</p>
                     </div>
                     <div class="col-2">
-                        <h1 class="">23</h1>
+                        <h1 id="Hours" class="">23</h1>
                         <p>Hour</p>
                     </div>
                     <div class="col-2">
-                        <h1 class="">59</h1>
+                        <h1 id="Minute" class="">59</h1>
                         <p>Minute</p>
                     </div>
-                    <div class="col-2">
+                    <div id="Seconde" class="col-2">
                         <h1 class="">45</h1>
                         <p>Seconde</p>
                     </div>
@@ -126,41 +126,41 @@
 
 
 <!-- Cards -->
-<div class="containerCards">
+<div id="Reserveer" class="containerCards">
     <div class="container-fluid" style="z-index: 1;background: rgb(119,172,162);
-background: linear-gradient(90deg, rgba(119,172,162,1) 0%, rgba(86,133,155,1) 100%);position:absolute;height: 300px;margin-top: 100px;"></div>
+background: linear-gradient(90deg, rgba(119,172,162,1) 0%, rgba(86,133,155,1) 100%);position:absolute;height: 300px;margin-top: 200px;"></div>
     <div class="container-fluid" style="z-index: 3;position: absolute">
         <div class="row justify-content-around">
-            <div class="col-2" style="text-align: center">
+            <div class="col-10 m-5 col-xs-10 col-md-3" style="text-align: center">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">3</h5>
-                        <p class="card-text">bags</p>
-                        <p class="card-text">5</p>
+                        <h5 class="card-title pt-md-5">3</h5>
+                        <p class="card-text pt-md-5">bags</p>
+                        <p class="card-text pt-md-5">5</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-dark btn-md">Reserveer</a>
                     </div>
                 </div>
             </div>
-            <div class="col-2" style="text-align: center">
+            <div class="col-10 m-5 col-xs-10 col-md-3" style="text-align: center">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">3</h5>
-                        <p class="card-text">bags</p>
-                        <p class="card-text">5</p>
+                        <h5 class="card-title pt-md-5">3</h5>
+                        <p class="card-text pt-md-5">bags</p>
+                        <p class="card-text pt-md-5">5</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-dark btn-md">Reserveer</a>
                     </div>
                 </div>
             </div>
-            <div class="col-2" style="text-align: center">
+            <div class="col-10 m-5 col-xs-10 col-md-3" style="text-align: center">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">3</h5>
-                        <p class="card-text">bags</p>
-                        <p class="card-text">5</p>
+                        <h5 class="card-title pt-md-5">3</h5>
+                        <p class="card-text pt-md-5">bags</p>
+                        <p class="card-text pt-md-5">5</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-dark btn-md">Reserveer</a>
@@ -170,4 +170,15 @@ background: linear-gradient(90deg, rgba(119,172,162,1) 0%, rgba(86,133,155,1) 10
         </div>
     </div>
 </div>
+<script>
+    timeStart = <?php echo $start_date * 1000?>;
+    timeEnds = <?php echo $end_date * 1000 ?>;
+        let time = getTime()
+        document.writeln("10")
+        document.getElementById("Hours").innerHTML = time.hours
+        document.getElementById("Minute").innerHTML = time.minutes
+        document.getElementById("Seconde").innerHTML = time.seconds;
+        console.log("test")
+
+</script>
 

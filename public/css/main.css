@@ -1,6 +1,9 @@
 * {
     font-family: "Roboto Light", serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #EFEFEF;
 }
